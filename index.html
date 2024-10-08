@@ -1,0 +1,678 @@
+/* Reset some default styles */
+<style>
+
+
+/* Set a base font */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section:nth-of-type(even) {
+    background-color: #f4f4f4;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: disc inside;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.project, .experience-item, .extracurricular-item, .education-item {
+    margin-bottom: 30px;
+}
+
+.project a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    text-align: center;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill, .project, .experience-item, .extracurricular-item, .education-item {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    nav ul li:first-child a {
+        border-top: none;
+    }
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a base font */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section:nth-of-type(even) {
+    background-color: #f4f4f4;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: disc inside;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.project, .experience-item, .extracurricular-item, .education-item {
+    margin-bottom: 30px;
+}
+
+.project a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    text-align: center;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill, .project, .experience-item, .extracurricular-item, .education-item {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    nav ul li:first-child a {
+        border-top: none;
+    }
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Student Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/PR1v4HT9J69MfTfDGtX9Tc6V1uPcIewjydBuc+q1nFf6jbURnMgYVEmUsQ9rIlC1U4Fbw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a base font */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #f4f4f4;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #4CAF50;
+        }
+
+        section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style: disc inside;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+
+        .project, .experience-item, .extracurricular-item, .education-item {
+            margin-bottom: 30px;
+        }
+
+        .project a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        #contact ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        #contact ul li {
+            margin: 10px 0;
+        }
+
+        #contact ul li a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        #contact ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill, .project, .experience-item, .extracurricular-item, .education-item {
+                width: 90%;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li a {
+                text-align: center;
+                border-top: 1px solid #444;
+            }
+
+            nav ul li a:first-child {
+                border-top: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="C:/Users/hp/Downloads/chas.jpg">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Chasmiya Banu GS</h1>
+            <p>Aspiring Computer Science Engineer</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ChasmiyaBanu" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#extracurricular">Extracurricular</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                [Write a brief introduction about yourself, your interests in engineering, and your career goals.]
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Programming Languages: Python, C++, C</li>
+                       
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Automated Greenhouse System</h3>
+                <p><strong>Objective:</strong> Developed a smart greenhouse system using IoT to monitor and control temperature and humidity levels.</p>
+                <p><strong>Technologies Used:</strong> Arduino, Python, Node-RED</p>
+                <p><strong>Role:</strong> Designed the circuit, wrote control code, and integrated sensor data with a cloud database.</p>
+                <p><strong>Outcome:</strong> Achieved a 30% increase in crop yield through precise environmental controls.</p>
+                <a href="https://github.com/ChasmiyaBanu" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Engineering]</h3>
+                <p>[Sridevi Institute of Engineering and Technologies], [Tumkur, Karnataka]</p>
+                <p>Expected Graduation: [March, 2026]</p>
+                <p>GPA: [Your 7.9]</p>
+                <p><strong>Relevant Coursework:</strong> [C], [C++], [Python], etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            
+            <!-- Add more experiences as needed -->
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>[Devops] – [Mevi Technologies], [Febrauray, 2024]</li>
+                <li>[Python using DSA] – [Mevi Technologies], [September, 2024]</li>
+                <!-- Add more certifications as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Extracurricular Section -->
+    <section id="extracurricular">
+        <div class="container">
+            
+           
+            <!-- Add more extracurricular activities as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>You can reach me at:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="chasmiya2004@gmail.com">youremail@example.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Chasmiya Banu GS</p>
+        </div>
+    </footer>
+</body>
+</html>
